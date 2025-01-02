@@ -1,4 +1,5 @@
-import FormAddFriend from "./components/FormAddFriend";
+import FormAddFriend from "./components/form/FormAddFriend";
+import FormSplitBill from "./components/form/FormSplitBill";
 import FriendList from "./components/FriendList";
 import initialFriends from "./data/sample.json";
 
@@ -9,6 +10,7 @@ function App() {
         <FriendList friends={initialFriends} />
         <FormAddFriend />
       </div>
+      <FormSplitBill />
     </div>
   );
 }
