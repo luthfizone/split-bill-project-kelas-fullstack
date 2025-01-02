@@ -17,7 +17,7 @@ function App() {
         <FriendList friends={initialFriends} />
         {showAddFriend && <FormAddFriend />}
         <button className="button btn-add-friend" onClick={handleShowAddFriend}>
-          {showAddFriend ? "Add Friend" : "Close"}
+          {showAddFriend ? "Close" : "Add Friend"}
         </button>
       </div>
       <FormSplitBill />
