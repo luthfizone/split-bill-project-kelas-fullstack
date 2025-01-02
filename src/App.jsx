@@ -13,7 +13,7 @@ function App() {
   };
 
   const handleNewFriend = (friend) => {
-    setFriend([...defaultFriend, friend]);
+    setFriend((defaultFriend) => [...defaultFriend, friend]);
   };
 
   return (

@@ -41,6 +41,7 @@ function FormAddFriend({ onHandleNewFriend }) {
         name="name"
         id="name"
         className="input-name"
+        value={newFriend}
         onChange={(event) => setNewFriend(event.target.value)}
       />
 
@@ -53,6 +54,7 @@ function FormAddFriend({ onHandleNewFriend }) {
         name="image"
         id="image"
         className="input-image"
+        value={newImage}
         onChange={(event) => setNewImage(event.target.value)}
       />
 
