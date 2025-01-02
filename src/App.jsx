@@ -16,10 +16,10 @@ function App() {
       <div className="sidebar">
         <FriendList friends={initialFriends} />
         {showAddFriend && <FormAddFriend />}
-        <button className="button btn-add-friend" onClick={handleShowAddFriend}>
-          {showAddFriend ? "Close" : "Add Friend"}
-        </button>
       </div>
+      <button className="button btn-add-friend" onClick={handleShowAddFriend}>
+        {showAddFriend ? "Close" : "Add Friend"}
+      </button>
       <FormSplitBill />
     </div>
   );
