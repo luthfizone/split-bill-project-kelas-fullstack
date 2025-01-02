@@ -76,6 +76,7 @@ body {
   grid-row: 2;
   grid-column: 2;
   grid-area: paragraph;
+  transform: translateY(-10px);
 }
 
 .red {
@@ -89,8 +90,12 @@ body {
 .button {
   margin-top: 0.6rem;
   grid-area: button;
-  padding: 5px 7px;
+  padding: 0.8rem 1.2rem;
   cursor: pointer;
   border-radius: 7px;
   border: 1px solid var(--color-dark);
+  transform: translateY(12px);
+  background-color: var(--color-medium);
+  color: #393f44;
+  transition: 0.3%;
 }
