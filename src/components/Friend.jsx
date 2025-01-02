@@ -1,6 +1,6 @@
 import PropsTypes from "prop-types";
 
-function Friend({ id, name, balance, image }) {
+function Friend({ id, name, balance, image, onSelectedFriend }) {
   const formatCurrency = Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
@@ -21,7 +21,12 @@ function Friend({ id, name, balance, image }) {
         </p>
       )}
       {balance === 0 && <p>You have&apos;nt outstanding balance with {name}</p>}
-      <button className="button">Select</button>
+      <button
+        className="button"
+        onClick={() => onSelectedFriend({ id, name, balance, image })}
+      >
+        Select
+      </button>
     </li>
   );
 }
@@ -31,6 +36,7 @@ Friend.propTypes = {
   name: PropsTypes.string,
   balance: PropsTypes.number,
   image: PropsTypes.string,
+  onSelectedFriend: PropsTypes.func,
 };
 
 export default Friend;

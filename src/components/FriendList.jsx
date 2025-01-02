@@ -1,7 +1,7 @@
 import Friend from "./Friend";
 import PropsTypes from "prop-types";
 
-function FriendList({ friends }) {
+function FriendList({ friends, onSelectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (
@@ -11,6 +11,7 @@ function FriendList({ friends }) {
           name={friend.name}
           image={friend.image}
           balance={friend.balance}
+          onSelectedFriend={onSelectedFriend}
         />
       ))}
     </ul>
@@ -19,6 +20,7 @@ function FriendList({ friends }) {
 
 FriendList.propTypes = {
   friends: PropsTypes.array.isRequired,
+  onSelectedFriend: PropsTypes.func,
 };
 
 export default FriendList;
