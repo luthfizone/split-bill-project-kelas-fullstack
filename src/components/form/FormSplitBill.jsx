@@ -3,42 +3,46 @@ function FormSplitBill() {
     <form className="form-split-bill">
       <h1>Split Bill with X</h1>
 
-      <label htmlFor="totalTagihan" className="label-total-tagihan">
-        💵Total Tagihan:{" "}
+      {/* Total Bill */}
+      <label htmlFor="totalBill" className="label-total-bill">
+        💵Total Bill:{" "}
       </label>
       <input
         type="text"
-        id="totalTagihan"
-        name="totalTagihan"
-        className="input-total-tagihan"
+        id="totalBill"
+        name="totalBill"
+        className="input-total-bill"
       />
 
-      <label htmlFor="tagihanKamu" className="label-tagihan-kamu">
-        🙋🏻Tagihan Kamu:{" "}
+      {/* Your Bill */}
+      <label htmlFor="yourBill" className="label-your-bill">
+        🙋🏻Your Bill:{" "}
       </label>
       <input
         type="text"
-        id="tagihanKamu"
-        name="tagihanKamu"
-        className="input-tagihan-kamu"
+        id="yourBill"
+        name="yourBill"
+        className="input-your-bill"
       />
 
-      <label htmlFor="tagihanTeman" className="label-tagihan-teman">
-        🙋🏻Tagihan Teman:{" "}
+      {/* Friend's Bill */}
+      <label htmlFor="friendBill" className="label-friend-bill">
+        🙋🏻Friend&apos;s Bill:{" "}
       </label>
       <input
         type="text"
-        id="tagihanTeman"
-        name="tagihanTeman"
+        id="friendBill"
+        name="friendBill"
         disabled
-        className="input-tagihan-teman"
+        className="input-friend-bill"
       />
 
-      <label htmlFor="ditalangin" className="label-ditalangin">
-        🤑 Ditalangin sama:{" "}
+      {/* Covered By */}
+      <label htmlFor="coveredBy" className="label-covered-by">
+        🤑 Covered By{" "}
       </label>
-      <select name="ditalangin" id="ditalangin" className="input-ditalangin">
-        <option value="user">Kamu</option>
+      <select name="coveredBy" id="coveredBy" className="input-covered-by">
+        <option value="user">You</option>
         <option value="friend">X</option>
       </select>
 

@@ -191,10 +191,10 @@ form .button {
   grid-template-columns: 1fr 12rem;
   grid-template-areas:
     "header ."
-    "label-total input-total"
-    "label-tagihan-kamu input-tagihan-kamu"
-    "label-tagihan-teman input-tagihan-teman"
-    "label-ditalangin input-ditalangin"
+    "label-total-bill input-total-bill"
+    "label-your-bill input-your-bill"
+    "label-friend-bill input-friend-bill"
+    "label-covered-by input-covered-by"
     ". button";
   padding: 3.2rem 4rem;
 }
@@ -203,36 +203,36 @@ form .button {
   grid-area: header;
 }
 
-.label-total-tagihan {
-  grid-area: label-total;
+.label-total-bill {
+  grid-area: label-total-bill;
 }
 
-.input-total-tagihan {
-  grid-area: input-total;
+.input-total-bill {
+  grid-area: input-total-bill;
 }
 
-.label-tagihan-kamu {
-  grid-area: label-tagihan-kamu;
+.label-your-bill {
+  grid-area: label-your-bill;
 }
 
-.input-tagihan-kamu {
-  grid-area: input-tagihan-kamu;
+.input-your-bill {
+  grid-area: input-your-bill;
 }
 
-.label-tagihan-teman {
-  grid-area: label-tagihan-teman;
+.label-friend-bill {
+  grid-area: label-friend-bill;
 }
 
-.input-tagihan-teman {
-  grid-area: input-tagihan-teman;
+.input-friend-bill {
+  grid-area: input-friend-bill;
 }
 
-.label-ditalangin {
-  grid-area: label-ditalangin;
+.label-covered-by {
+  grid-area: label-covered-by;
 }
 
-.input-ditalangin {
-  grid-area: input-ditalangin;
+.input-covered-by {
+  grid-area: input-covered-by;
 }
 
 .button {
