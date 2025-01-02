@@ -38,6 +38,11 @@ body {
 }
 
 /* sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar ul {
   display: flex;
   flex-direction: column;
@@ -107,7 +112,7 @@ body {
 
 .btn-add-friend {
   transform: none;
-  transform: translateX(25rem);
+  align-self: end;
   margin-bottom: 1rem;
 }
 
