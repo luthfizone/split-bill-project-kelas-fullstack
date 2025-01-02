@@ -42,7 +42,7 @@ function FormSplitBill() {
         <option value="friend">X</option>
       </select>
 
-      <button className="button btn-bill">Add Bill</button>
+      <button className="button">Add Bill</button>
     </form>
   );
 }

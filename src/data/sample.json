@@ -1,19 +1,19 @@
 [
   {
     "id": 118836,
-    "name": "Budi",
+    "name": "John Doe",
     "image": "https://i.pravatar.cc/48?u=118836",
     "balance": -7000
   },
   {
     "id": 933372,
-    "name": "Sukma",
+    "name": "Jane Smith",
     "image": "https://i.pravatar.cc/48?u=933372",
     "balance": 20000
   },
   {
     "id": 499476,
-    "name": "Parjo",
+    "name": "Alex Johnson",
     "image": "https://i.pravatar.cc/48?u=499476",
     "balance": 0
   }
