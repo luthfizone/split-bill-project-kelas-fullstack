@@ -3,17 +3,17 @@
     "id": 118836,
     "name": "John",
     "image": "https://i.pravatar.cc/48?u=118836",
-    "balance": -7000
+    "balance": -7
   },
   {
     "id": 933372,
-    "name": "Jane",
+    "name": "Alex",
     "image": "https://i.pravatar.cc/48?u=933372",
-    "balance": 20000
+    "balance": 20
   },
   {
     "id": 499476,
-    "name": "Alex",
+    "name": "Paul",
     "image": "https://i.pravatar.cc/48?u=499476",
     "balance": 0
   }
