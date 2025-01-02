@@ -1,10 +1,19 @@
 import PropsTypes from "prop-types";
 
-function Friend({ id, name, balance, image, onSelectedFriend }) {
+function Friend({
+  id,
+  name,
+  balance,
+  image,
+  onSelectedFriend,
+  selectedFriend,
+}) {
   const formatCurrency = Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
   });
+
+  const isSelectedFriend = selectedFriend?.id === id;
 
   return (
     <li key={id}>
@@ -25,7 +34,7 @@ function Friend({ id, name, balance, image, onSelectedFriend }) {
         className="button"
         onClick={() => onSelectedFriend({ id, name, balance, image })}
       >
-        Select
+        {isSelectedFriend ? "close" : "select"}
       </button>
     </li>
   );
@@ -37,6 +46,7 @@ Friend.propTypes = {
   balance: PropsTypes.number,
   image: PropsTypes.string,
   onSelectedFriend: PropsTypes.func,
+  selectedFriend: PropsTypes.object,
 };
 
 export default Friend;

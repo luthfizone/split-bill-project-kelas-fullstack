@@ -32,13 +32,16 @@ function App() {
         <FriendList
           friends={defaultFriend}
           onSelectedFriend={handleSelectedFriend}
+          selectedFriend={selectedFriend}
         />
         {showAddFriend && <FormAddFriend onHandleNewFriend={handleNewFriend} />}
       </div>
       <button className="button btn-add-friend" onClick={handleShowAddFriend}>
         {showAddFriend ? "Close" : "Add Friend"}
       </button>
-      {selectedFriend !== null && <FormSplitBill />}
+      {selectedFriend !== null && (
+        <FormSplitBill selectedFriend={selectedFriend} />
+      )}
     </div>
   );
 }
