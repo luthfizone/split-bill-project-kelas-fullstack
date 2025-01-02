@@ -36,3 +36,61 @@ body {
   column-gap: 4rem;
   align-items: start;
 }
+
+/* sidebar */
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.sidebar li {
+  display: grid;
+  grid-template-columns: 4.8rem 1fr auto;
+  grid-template-areas:
+    "image name button"
+    ". paragraph .";
+  column-gap: 1.6rem;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 7px;
+  transition: 0.5%;
+}
+
+.sidebar li img {
+  border-radius: 50%;
+  width: 100%;
+  transform: translateY(20px);
+  grid-area: image;
+}
+
+.sidebar li h3 {
+  grid-row: 1;
+  grid-column: 2;
+  grid-area: name;
+}
+
+.sidebar li p {
+  grid-row: 2;
+  grid-column: 2;
+  grid-area: paragraph;
+}
+
+.red {
+  color: #e22d2d;
+}
+
+.green {
+  color: #1cac1c;
+}
+
+.button {
+  margin-top: 0.6rem;
+  grid-area: button;
+  padding: 5px 7px;
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid var(--color-dark);
+}
