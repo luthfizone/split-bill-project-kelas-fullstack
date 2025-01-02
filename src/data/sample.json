@@ -1,13 +1,13 @@
 [
   {
     "id": 118836,
-    "name": "John Doe",
+    "name": "John",
     "image": "https://i.pravatar.cc/48?u=118836",
     "balance": -7000
   },
   {
     "id": 933372,
-    "name": "Jane Smith",
+    "name": "Jane",
     "image": "https://i.pravatar.cc/48?u=933372",
     "balance": 20000
   },
