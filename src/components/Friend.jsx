@@ -12,16 +12,16 @@ function Friend({ id, name, balance, image }) {
       <h3>{name}</h3>
       {balance < 0 && (
         <p className="red">
-          Kamu berhutang {formatCurrency.format(Math.abs(balance))} ke {name}
+          You owe {formatCurrency.format(Math.abs(balance))} to {name}
         </p>
       )}
       {balance > 0 && (
         <p className="green">
-          {name} berhutang {formatCurrency.format(Math.abs(balance))} ke kamu
+          {name} owes you {formatCurrency.format(Math.abs(balance))}
         </p>
       )}
-      {balance === 0 && <p>Kamu dan {name} tidak ada hutang</p>}
-      <button className="button">Pilih</button>
+      {balance === 0 && <p>You have&apos;nt outstanding balance with {name}</p>}
+      <button className="button">Select</button>
     </li>
   );
 }
