@@ -1,3 +1,4 @@
+import FormAddFriend from "./components/FormAddFriend";
 import FriendList from "./components/FriendList";
 import initialFriends from "./data/sample.json";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="app-container">
       <div className="sidebar">
         <FriendList friends={initialFriends} />
+        <FormAddFriend />
       </div>
     </div>
   );

@@ -99,3 +99,75 @@ body {
   color: #393f44;
   transition: 0.3%;
 }
+
+/* Form */
+form {
+  font-size: 1.5rem;
+  display: grid;
+  align-items: center;
+  gap: 1.2rem;
+
+  background-color: var(--color-lightness);
+  border-radius: 7px;
+}
+
+.form-add-friend {
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-areas:
+    "label-name input-name"
+    "label-image input-image"
+    ". button";
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+}
+
+.label-name {
+  grid-area: label-name;
+}
+
+.input-name {
+  grid-area: input-name;
+}
+
+.label-image {
+  grid-area: label-image;
+}
+
+.input-image {
+  grid-area: input-image;
+}
+
+label {
+  font-weight: 500;
+  grid-area: label;
+}
+
+label::first-letter {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 1.8rem;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  grid-area: input;
+  /* text-align: center; */
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--color-dark);
+}
+
+form .button {
+  transform: translateY(-5px);
+  grid-area: button;
+}
+
+.btn-friend:hover {
+  background-color: #97aabd;
+}
