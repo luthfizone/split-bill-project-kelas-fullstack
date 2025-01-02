@@ -9,6 +9,7 @@ function App() {
       <div className="sidebar">
         <FriendList friends={initialFriends} />
         <FormAddFriend />
+        <button className="button btn-add-friend">Add Friend</button>
       </div>
       <FormSplitBill />
     </div>

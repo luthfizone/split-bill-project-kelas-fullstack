@@ -11,7 +11,7 @@ function FormAddFriend() {
       </label>
       <input type="text" name="image" id="image" className="input-image" />
 
-      <button className="button btn-friend">Add Friend</button>
+      <button className="button">Add</button>
     </form>
   );
 }

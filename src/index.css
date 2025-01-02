@@ -100,6 +100,17 @@ body {
   transition: 0.3%;
 }
 
+.button:hover {
+  background-color: var(--color-dark);
+  color: var(--color-lightness);
+}
+
+.btn-add-friend {
+  transform: none;
+  transform: translateX(25rem);
+  margin-bottom: 1rem;
+}
+
 /* Form friend*/
 form {
   font-size: 1.5rem;
@@ -168,11 +179,6 @@ select:focus {
 form .button {
   transform: translateY(-5px);
   grid-area: button;
-}
-
-.btn-friend:hover,
-.btn-bill:hover {
-  background-color: #97aabd;
 }
 
 /* Form split bill*/
